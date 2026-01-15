@@ -2,7 +2,7 @@ import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 
-function ServiceCard({ Icon , title, content}) {
+function ServiceCard({ Icon, title, content}) {
   return (
     <div className="relative p-6 rounded-lg">
         <div className="absolute top-0 left-20 w-[65px] h-[65px] bg-purple-800">

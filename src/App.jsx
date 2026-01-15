@@ -10,6 +10,9 @@ import Services from "./components/Services";
 import WorkExperiences from "./components/WorkExperiences";
 import Footer from "./components/Footer";
 import Expertise from "./components/Expertise";
+import Portfolio from "./components/Portfolio";
+import ContactSection from "./components/ContactSection";
+
 function App() {
   const ready = useAppReady();
   const [ showLoader , setShowLoader ] = useState(true);
@@ -38,8 +41,16 @@ function App() {
         <section className="min-h-screen" id="services" style={{background: "#141414"}}>
           <Services />
         </section>
-        
+        <section className="min-h-screen" style={{background : "#141414"}}>
+          <WorkExperiences />
+        </section>
+        <section className="min-h-screen" id = "projects" style={{background : "#141414"}}>
+          <Portfolio />
+        </section>
         <Expertise />
+        <section className="min-h-screen" id = "contact" style={{background : "#141414"}}>
+          <ContactSection />
+        </section>
         <Footer />
 
 

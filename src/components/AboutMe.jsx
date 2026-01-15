@@ -4,7 +4,7 @@ function AboutMe() {
     <div className="max-w-7xl mx-auto px-6 py-4 relative overflow-visible">
 
         {/* About Me Section */}
-        <div className="ml-10 mt-48 text-left">
+        <div className="mt-48 text-left">
             <span className="animate-on-view text-purple-800 font-bold text-2xl">
                 {AboutData.sectionName}
             </span>
@@ -18,8 +18,8 @@ function AboutMe() {
             </p>
         </div>
 
-        <div className="ml-40 absolute left-1/4 top-1/4 mt-10">
-            <div className="w-[700px] h-[600px] bg-white/10 z-20">
+        <div className="about-art-wrapper ml-40 absolute left-1/4 top-1/4 mt-10">
+            <div className="about-art w-[700px] h-[600px] bg-white/10 z-20">
             </div>
         </div>
 
