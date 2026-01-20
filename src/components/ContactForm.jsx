@@ -4,12 +4,15 @@ import Alert from '@mui/material/Alert';
 import InputField from "./InputField";
 import SelectField from "./SelectField";
 import SubmitButton from "./SubmitButton";
+import DescriptionField from "./DescriptionField";
+import { formControlClasses } from "@mui/material";
 function ContactForm() {
     const [ formData , setFormData ] = useState({
         name : "",
         email : "",
         phone : "",
         service : "",
+        description : "",
     });
 
     const [loading, setLoading] = useState(false);
@@ -31,7 +34,8 @@ function ContactForm() {
             name: formData.name,
             email: formData.email,
             phone: formData.phone,
-            service: formData.service
+            service: formData.service,
+            description: formData.description,
         };
         try {
             const res = await fetch("https://api.web3forms.com/submit", {
@@ -47,7 +51,8 @@ function ContactForm() {
                     name: "",
                     email: "",
                     phone: "",
-                    service: ""
+                    service: "",
+                    description: "",
                 });
             }
         }
@@ -63,7 +68,7 @@ function ContactForm() {
             <div className="bg-purple-1000 p-8 m-5 mt-10 lg:mr-5">
                 <form className="space-y-6" onSubmit={handleSubmit}>
                     <InputField
-                        label="Name"
+                        label="NAME"
                         type="text"
                         id="name"
                         name="name"
@@ -73,7 +78,7 @@ function ContactForm() {
                         required
                     />
                     <InputField
-                        label="Email"
+                        label="EMAIL"
                         type="email"
                         id="email"
                         name="email"
@@ -84,7 +89,7 @@ function ContactForm() {
                     />
 
                     <InputField
-                        label="Phone Number"
+                        label="PHONE NUMBER"
                         type="tel"
                         id="phone"
                         name="phone"
@@ -94,7 +99,7 @@ function ContactForm() {
                         required
                     />
                     <SelectField
-                        label="Service Required"
+                        label="SERVICE REQUIRED"
                         id="service"
                         name="service"
                         value={formData.service}
@@ -105,6 +110,15 @@ function ContactForm() {
                             { label: "LONG-FORM", value: "long-form" },
                             { label: "GRAPHIC DESIGNER", value: "graphic-designing" }
                         ]}
+                    />
+                    <DescriptionField 
+                        label="DESCRIPTION"
+                        id="description"
+                        name="description"
+                        placeholder="Brief about your requirements"
+                        value={formData.description}
+                        onChange={handleChange}
+                        required
                     />
                     <SubmitButton
                         text={loading ? "Sending..." : "Send Message"}
@@ -125,12 +139,6 @@ function ContactForm() {
                             Message sent successfully!
                         </Alert>
                     </Snackbar>
-
-
-
-
-            
-
                 </form>
             </div>
         </div>

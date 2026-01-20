@@ -1,15 +1,15 @@
 import { AboutData } from "../data/AboutData"; 
 function AboutMe() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-4 relative overflow-visible">
+    <div className="max-w-7xl mx-auto px-6 py-4 relative">
 
         {/* About Me Section */}
         <div className="mt-48 text-left">
-            <span className="animate-on-view text-purple-800 font-bold text-2xl">
+            <span className="text-purple-800 font-bold text-2xl">
                 {AboutData.sectionName}
             </span>
 
-            <h1 className="animate-on-view text-white text-4xl lg:text-6xl font-bold mt-4 leading-tight">
+            <h1 className="text-white text-4xl lg:text-6xl font-bold mt-4 leading-tight">
                 {AboutData.sectionHeadingFirst}
             </h1>
 

@@ -11,7 +11,7 @@ function SelectField(props) {
                 value={props.value}
                 onChange={props.onChange}
                 required={props.required}
-                className="custom-drop w-full px-5 py-3 bg-transparent border border-white text-white
+                className="custom-drop w-full px-5 py-3 bg-transparent border border-white text-white/50
                     focus:outline-none appearance-none"
             >
                 <option value="">Select a service</option>
