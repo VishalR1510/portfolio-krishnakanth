@@ -37,13 +37,13 @@ function App() {
          <section className="min-h-screen" id="about" style={{background: "#141414"}}>
           <AboutMe />
         </section> 
-        <section className="min-h-screen py-10" id="services" style={{background: "#141414"}}>
+        <section className="min-h-screen py-10" id="service" style={{background: "#141414"}}>
           <Services />
         </section>
-        { /*}
         <section className="min-h-screen" style={{background : "#141414"}}>
           <WorkExperiences />
         </section>
+        { /*
         <section className="min-h-screen" id = "projects" style={{background : "#141414"}}>
           <Portfolio />
         </section>

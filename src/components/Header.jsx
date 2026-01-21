@@ -112,6 +112,25 @@ function Header() {
 
         closeMobileMenu();
     };
+
+    const handleServiceClick = (e) => {
+        e.preventDefault();
+        
+        const aboutSection = document.getElementById('service');
+        if (!aboutSection) return;
+
+        document.body.classList.add('service-click-animate');
+
+        aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        
+        setTimeout(() => {
+            document.body.classList.remove('service-click-animate');
+        }, 2000);
+
+        closeMobileMenu();
+
+    }
     
     return (
         <header 
@@ -137,7 +156,13 @@ function Header() {
                     </a>
                 </li>
                 <li>
-                    <a className="custom-target font-icomoon font-bold hover:text-purple-800 whitespace-nowrap" href="#services" onClick={closeMobileMenu}>SERVICES</a>
+                    <a 
+                        className="custom-target font-icomoon font-bold hover:text-purple-800 whitespace-nowrap" 
+                        href="#service" 
+                        onClick={handleServiceClick}
+                    >
+                        SERVICES
+                    </a>
                 </li>
                 <li>
                     <a className="custom-target font-icomoon font-bold hover:text-purple-800 whitespace-nowrap" href="#projects" onClick={closeMobileMenu}>PROJECTS</a>

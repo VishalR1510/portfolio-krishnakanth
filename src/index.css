@@ -419,7 +419,6 @@ body.cursor-hover .custom-cursor {
   animation-delay: 1s;
   animation-fill-mode: forwards;
   animation-timeline: view();
-  /* wider range = slower + smoother scroll-linked progress */
   animation-range: entry 0% cover 100vh;
 }
 
@@ -440,7 +439,7 @@ body.cursor-hover .custom-cursor {
 .cardReveal {
   animation : card-animation both;
   animation-timeline: view(50% 20%);
-  
+
 }
 
 @keyframes card-animation {
@@ -456,6 +455,35 @@ body.cursor-hover .custom-cursor {
     scale : 1 ;
     translate: 0 0;
   }
-
-
 }
+
+.service-title {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: about-title-slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100vh;
+}
+
+.service-click-animate .service-title {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: hero-title-slide 1s ease-out 0.6s forwards;
+}
+
+.work-title {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: about-title-slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100vh;
+}
+

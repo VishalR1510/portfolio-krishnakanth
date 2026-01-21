@@ -1,7 +1,7 @@
 import { AboutData } from "../data/AboutData"; 
 function AboutMe() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-4">
+    <div className="max-w-7xl mx-auto px-6 py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
             <div className="text-left ">
@@ -22,7 +22,6 @@ function AboutMe() {
                 <div className="w-full max-w-[700px] h-[320px] md:h-[600px] bg-white/10">
                 </div>
             </div>
-
         </div>
 
     </div>

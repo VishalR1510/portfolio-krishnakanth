@@ -6,7 +6,7 @@ function WorkExperiences() {
     <section className="text-white py-4">
         <div className="p-8">
             <h2 className="text-purple-800 text-2xl font-bold text-center mb-4">MY EXPERIENCE</h2>
-            <h1 className="text-5xl text-center font-bold mb-12">CRAFTING GROWTH: MY CAREER EXPERIENCE</h1>
+            <h1 className="work-title text-5xl text-center font-bold mb-12">CRAFTING GROWTH: MY CAREER EXPERIENCE</h1>
         </div>
         <div className="timeline">
             {WorkData.map((item) => (
