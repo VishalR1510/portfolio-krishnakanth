@@ -32,15 +32,15 @@ function App() {
         <div className="min-h-screen bg-[linear-gradient(45deg,#26143F_0%,#141414_55%)]">
           <CustomCursor />
           <Header />
-         { <HeroSection /> }
+          <HeroSection />
         </div> }
-        <section className="min-h-screen" id="about" style={{background: "#141414"}}>
+         <section className="min-h-screen" id="about" style={{background: "#141414"}}>
           <AboutMe />
         </section> 
-        <div className="w-full h-[200px]" style={{background: "#141414"}} />
-          {/* <section className="min-h-screen" id="services" style={{background: "#141414"}}>
-            <Services />
-          </section> */} 
+        <section className="min-h-screen py-10" id="services" style={{background: "#141414"}}>
+          <Services />
+        </section>
+        { /*}
         <section className="min-h-screen" style={{background : "#141414"}}>
           <WorkExperiences />
         </section>
@@ -51,7 +51,7 @@ function App() {
         <section className="min-h-screen" id = "contact" style={{background : "#141414"}}>
           <ContactSection />
         </section>
-        <Footer /> 
+        <Footer /> */} 
 
 
       </Suspense>

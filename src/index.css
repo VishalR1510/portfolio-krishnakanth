@@ -409,3 +409,53 @@ body.cursor-hover .custom-cursor {
   font-weight: normal;
 
 }
+
+.about-title {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: about-title-slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  /* wider range = slower + smoother scroll-linked progress */
+  animation-range: entry 0% cover 100vh;
+}
+
+.about-click-animate .about-title {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: hero-title-slide 1s ease-out 0.6s forwards;
+}
+
+@keyframes about-title-slide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.cardReveal {
+  animation : card-animation both;
+  animation-timeline: view(50% 20%);
+  
+}
+
+@keyframes card-animation {
+  from  {
+    filter : saturate(0) contrast(4) brightness(.1) blur(5px);
+    opacity: 0;
+    scale : .95;
+    translate : 0 4rem;
+  }
+  to {
+    filter : none ;
+    opacity : 1;
+    scale : 1 ;
+    translate: 0 0;
+  }
+
+
+}

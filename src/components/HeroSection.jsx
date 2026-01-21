@@ -4,7 +4,7 @@ import { LandingData } from "../data/LandingData";
 
 function HeroSection() {
   return (
-    <section className="relative flex items-center justify-center min-h-screen overflow-hidden">
+    <section className="relative flex items-center justify-center min-h-screen">
       <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
         <div className="relative hidden xl:flex justify-center items-center">

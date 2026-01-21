@@ -3,12 +3,12 @@ import { ServiceData } from "../data/ServiceData";
 
 function Services() {
   return (
-    <section className=" text-white py-16">
-      <div className="max-w-7xl mx-4 px-6 mt-24">
+    <section className="text-white">
+      <div className="max-w-7xl mx-auto px-6 py-10">
         <h2 className="animate-on-view text-purple-800 text-2xl font-bold text-center mb-4">MY SERVICE</h2>
         <h1 className="animate-on-view text-5xl text-center font-bold mb-12">PUSHING BOUNDARIES: MY PORTFOLIO OF LIMITLESS IDEAS</h1>
 
-        <div className="service-card-animate grid grid-cols-1 md:grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {ServiceData.map((data) => (
             <ServiceCard 
               key={data.id}
