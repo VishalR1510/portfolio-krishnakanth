@@ -487,3 +487,14 @@ body.cursor-hover .custom-cursor {
   animation-range: entry 0% cover 100vh;
 }
 
+.portfolio-title {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: about-title-slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 100vh;
+}

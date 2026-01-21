@@ -42,7 +42,7 @@ export default function Portfolio() {
     <div className="max-w-7xl mx-auto px-6 py-20 w-full">
         <div className="grid grid-cols-12 gap-10 items-center">
 
-            <div className="col-span-12 lg:col-span-6">
+            <div className="col-span-12 lg:col-span-6 portfolio-title">
                 <p className="text-purple-800 font-bold text-2xl mb-5">
                     VIDEO EDITOR
                 </p>

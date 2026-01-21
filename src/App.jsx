@@ -29,24 +29,26 @@ function App() {
       { showLoader && <Preloader done = {ready} />}
       <Suspense fallback={null}>
       { ready && 
-        <div className="min-h-screen bg-[linear-gradient(45deg,#26143F_0%,#141414_55%)]">
+        <div className="bg-[linear-gradient(45deg,#26143F_0%,#141414_55%)]">
           <CustomCursor />
           <Header />
           <HeroSection />
         </div> }
-         <section className="min-h-screen" id="about" style={{background: "#141414"}}>
+         <section className="" id="about" style={{background: "#141414"}}>
           <AboutMe />
         </section> 
-        <section className="min-h-screen py-10" id="service" style={{background: "#141414"}}>
+        <section className=" py-10" id="service" style={{background: "#141414"}}>
           <Services />
         </section>
-        <section className="min-h-screen" style={{background : "#141414"}}>
+        <section className="" style={{background : "#141414"}}>
           <WorkExperiences />
         </section>
         { /*
-        <section className="min-h-screen" id = "projects" style={{background : "#141414"}}>
+        
+        <section className="" id = "projects" style={{background : "#141414"}}>
           <Portfolio />
         </section>
+        
         <Expertise />
         <section className="min-h-screen" id = "contact" style={{background : "#141414"}}>
           <ContactSection />
